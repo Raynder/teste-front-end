@@ -59,7 +59,7 @@
     }
 
     .campo textarea {
-        height: 130px;
+        height: 140px;
     }
     
 }
@@ -98,7 +98,7 @@
     }
 
     .campo textarea {
-        height: auto;
+        height: 60px;
     }
     
 }
