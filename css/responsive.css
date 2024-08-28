@@ -1,0 +1,104 @@
+@media only screen and (min-width: 996px) and (max-width: 1301px) {
+    .bloco > div {
+        width: 370px;
+        height: 370px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 996px) {
+    .menu-oculto {
+        display: none;
+    }
+    .main-menu {
+        padding-top: 10px;
+    }
+    .header .nav li {
+        width: 100%;
+    }
+    .header .nav li a {
+        padding: 5px 0;
+    }
+    .menu-icon {
+        display: block !important;
+        position: relative;
+        width: 40px;
+        float: right;
+        margin-top: 18px;
+    }
+
+    .blocos {
+    }
+}
+@media only screen and (max-width: 767px) {
+    .menu-oculto {
+        display: none;
+    }
+    .main-menu {
+        padding-top: 10px;
+    }
+    .header .nav li {
+        width: 100%;
+    }
+    .header .nav li a {
+        padding: 5px 0;
+    }
+    .menu-icon {
+        display: block !important;
+        position: relative;
+        width: 40px;
+        float: right;
+        margin-top: 18px;
+    }
+
+    .blocos {
+        flex-direction: column;
+    }
+
+    .bloco > div > h2 {
+        font-size: 22px;
+    }
+
+    .campo textarea {
+        height: 140px;
+    }
+    
+}
+@media only screen and (max-width: 450px) {
+    .menu-oculto {
+        display: none;
+    }
+    .main-menu {
+        padding-top: 10px;
+    }
+    .header .nav li {
+        width: 100%;
+    }
+    .header .nav li a {
+        padding: 5px 0;
+    }
+    .menu-icon {
+        display: block !important;
+        position: relative;
+        width: 40px;
+        float: right;
+        margin-top: 18px;
+    }
+
+    .blocos {
+        flex-direction: column;
+    }
+
+    .bloco > div {
+        width: 300px;
+        height: 300px;
+    }
+
+    .bloco > div > h2 {
+        font-size: 22px;
+    }
+
+    .campo textarea {
+        height: auto;
+    }
+    
+}

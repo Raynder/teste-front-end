@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+        <title>IMÓVEL GUIDE</title>
+		
+        <link rel="icon" href="img/favicon.png">
+		<link rel="stylesheet" as="style" href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" onload="this.rel='stylesheet'">
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/responsive.css">		
+    </head>
+    <body>
+        <div class="preloader">
+            <div class="loader">
+                <div class="loader-outter"></div>
+                <div class="loader-inner"></div>
+
+                <div class="indicator"> 
+                    <svg width="16px" height="12px">
+                        <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                        <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+	
+		<header class="header" >
+			<div class="header-inner">
+				<div class="container">
+					<div class="inner">
+						<div class="row">
+							<div class="col-lg-1 col-md-12 col-12">
+								<div class="logo">
+									<a href="index.html"><img src="imagens/logo.png" alt="#"></a>
+								</div>
+								
+                                <img class="menu-icon" style="display: none;" src="./imagens/menu.svg" alt="">
+							</div>
+
+                            <div class="col-lg-6 col-md-12 col-12">
+                                <div class="main-menu menu-oculto">
+                                    <nav class="navigation">
+                                        <ul class="nav menu">
+                                            <li><a href="#">Condominios </a></li>
+											<li><a href="#">Fórum </a></li>
+											<li><a href="#">Guia </a></li>
+											<li><a href="#">Artigos </a></li>
+											<li><a href="#">Ferramentas </a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+
+                            <div class="col-lg-5 col-md-12 col-12">
+								<div class="main-menu menu-oculto">
+									<nav class="navigation">
+										<ul class="nav menu" style="float: right;">
+											<li><a href="#">Cotar Imóvel </a></li>
+											<li><a href="#">Planos </a></li>
+											<li><a href="#">Entrar </a></li>
+											<li><a href="#" class="button">CADASTRE-SE </a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="conteudo blocos">
+                <div class="bloco"> 
+                    <div class="pessoas">
+                        <div class="pessoa">
+                            <div class="foto">
+                                <div class="blur" style="background-image: url(./imagens/pessoa1.jpg);"></div>
+                                <img class="foto-pessoa" src="./imagens/pessoa1.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h2>Nome Corretora</h2>
+                                <p>3.000 pontos</p>
+                                <a onclick="verNumero(this)">ver numero</a>
+                                <p class="numero" style="display: none;">99999999999</p>
+                            </div>
+                        </div>
+                        <div class="pessoa">
+                            <div class="foto">
+                                <div class="blur" style="background-image: url(./imagens/pessoa2.jpg);"></div>
+                                <img class="foto-pessoa" src="./imagens/pessoa2.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h2>Nome Corretor</h2>
+                                <p>1.260 pontos</p>
+                                <a onclick="verNumero(this)">ver numero</a>
+                                <p class="numero" style="display: none;">99999999999</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bloco">
+                    <div>
+                        <h2 class="bloco-titulo">Mande uma mensagem:</h2>
+                        <form class="mande-messagem">
+                            <div style="flex: 6;">
+                                <div class="campo">
+                                    <input type="text" name="cpf" id="cpf" class="cpf" placeholder="Digite seu CPF">
+                                </div>
+                                <div class="campo">
+                                    <input type="text" name="telefone" id="telefone" class="telefone" placeholder="Digite seu telefone">
+                                </div>
+                                <div class="campo">
+                                    <textarea name="assunto" id="assunto" class="assunto" placeholder="Digite o assunto"></textarea>
+                                </div>
+                            </div>
+                            <div style="flex: 1">
+                                <div class="campo" style="text-align: left;">
+                                    <button type="submit">Enviar Mensagem</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="bloco"> 
+                    <div>
+                        <h2 class="bloco-titulo">Regra de 3:</h2>
+                        <div style="flex: 6;" class="base-regra">
+                            <div class="campo">
+                                <input type="text" name="esquerda_1" id="esquerda_1" class="esquerda_1">
+                                <input type="text" name="esquerda_2" id="esquerda_2" class="esquerda_2">
+                            </div>
+                            <div class="campo">
+                                <input type="text" name="direita_1" id="direita_1" class="direita_1">
+                                <input type="text" disabled name="direita_2" id="direita_2" class="direita_2">
+                            </div>
+                        </div>
+                        <div style="flex: 1">
+                            <div class="campo" style="text-align: left;">
+                                <button type="button" id="calcular">Calcular</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bloco border-none"> 
+                    <div class="p-0 imagem-exemplo" id="imagem">
+                        <button type="button" class="p-2 mt-3" data-toggle="modal" data-target="#imagemModal">ABRIR IMAGEM NO MODAL</button>
+                    </div>
+                </div>
+                <div class="bloco"> 
+                    <div class="p-0 imagem-exemplo" id="capture">
+                        <button type="button" class="p-2 w-75">Imovel Guide</button>
+                        <button type="button" class="p-2 w-50 m-auto" onclick="print()">Download</button>
+                    </div>
+                </div>
+                <div class="bloco"> 
+                    <div class="p-0 imagem-zoom">
+                        <img src="./imagens/exemplo.jpg" alt="">
+                    </div>
+                </div>
+        </div>
+
+        <footer id="footer" class="footer ">
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+                        <div class="col-lg-5 col-md-5 col-12">
+							<nav class="navigation">
+                                <ul class="guias">
+                                    <li><a href="#">Termos </a></li>
+                                    <li><a href="#">Contatos </a></li>
+                                    <li><a href="#">Sobre </a></li>
+                                </ul>
+                            </nav>
+						</div>
+
+                        <div class="col-lg-1 col-md-1 col-0"></div>
+                        
+                        <div class="col-lg-5 col-md-5 col-8">
+                            <div class="copyright-info">
+                                © Copyright 2022,  Todos os direitos reservados.
+                            </div>
+                        </div>
+
+                        <div class="col-lg-1 col-md-1 col-4">
+                            <img src="imagens/logo.png" alt="#">
+                        </div>
+					</div>
+				</div>
+			</div>
+		</footer>
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="./scripts/html2canvas.min.js"></script>
+    <script src="./scripts/jquery.min.js"></script>
+    <script src="./scripts/jquery.mask.js"></script>
+    <script src="./scripts/main.js"></script>
+
+    <!-- Modal -->
+    <div class="modal fade" id="imagemModal" tabindex="-1" role="dialog" aria-labelledby="imagemModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img id="imagemModalSrc" src="" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</html>
